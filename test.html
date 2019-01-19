@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+<div class="titleLine">
+    <div class="titleName"></div>
+    <span class="moduleName">资金</span>
+</div>
+<div class="leftBox">
+    <div class="totalBox">
+        <div class="title">全国总投入</div>
+        <div class="moneyNumBox">
+            <span class="moneyNumber">33.54</span>
+            <span class="munit">亿元</span>
+        </div>
+    </div>
+    <div class="totalBox">
+        <div class="title">省合计</div>
+        <div class="moneyNumBox">
+            <span class="moneyNumber">15.25</span>
+            <span class="munit">亿元</span>
+        </div>
+    </div>
+    <div class="totalBox">
+        <div class="title">市合计</div>
+        <div class="moneyNumBox">
+            <span class="moneyNumber">9.75</span>
+            <span class="munit">亿元</span>
+        </div>
+    </div>
+    <div class="totalBox">
+        <div class="title">县合计</div>
+        <div class="moneyNumBox">
+            <span class="moneyNumber">6.35</span>
+            <span class="munit">亿元</span>
+        </div>
+    </div>
+</div>
+<div class="rightBox">
+    <div class="chartBox">
+        <div class="chartTitle">
+            历年2010-2017总投入数对比
+        </div>
+        <div class="contentBox">
+
+        </div>
+    </div>
+</div>
+<div class="middleTotalNumber">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>1</li>
+    </ul>
+</div>
+<ul class="middle">
+    <li class="lv1"><div class="moneyBox"><span class="bigNum">1</span><span class="unit">千万</span></div><div class="iconTitle">软件开发升级及实施费用</div></li>
+    <li class="lv2"><div class="moneyBox"><span class="bigNum">2</span><span class="unit">千万</span></div><div class="iconTitle">其他</div></li>
+    <li class="lv3"><div class="moneyBox"><span class="bigNum">7</span><span class="unit">千万</span></div><div class="iconTitle">基础软件</div></li>
+    <li class="lv4"><div class="moneyBox"><span class="bigNum">7</span><span class="unit">千万</span></div><div class="iconTitle">安全软件</div></li>
+    <li class="lv5"><div class="moneyBox"><span class="bigNum">7</span><span class="unit">千万</span></div><div class="iconTitle">机房环境</div></li>
+    <li class="lv6"><div class="moneyBox"><span class="bigNum">7</span><span class="unit">千万</span></div><div class="iconTitle">安全设备</div></li>
+    <li class="lv7"><div class="moneyBox"><span class="bigNum">7</span><span class="unit">千万</span></div><div class="iconTitle">储备设备</div></li>
+    <li class="lv8"><div class="moneyBox"><span class="bigNum">7</span><span class="unit">千万</span></div><div class="iconTitle">服务器设备</div></li>
+    <li class="lv9"><div class="moneyBox"><span class="bigNum">7</span><span class="unit">千万</span></div><div class="iconTitle">网络设备</div></li>
+    <li class="lv10"><div class="moneyBox"><span class="bigNum">7</span><span class="unit">千万</span></div><div class="iconTitle">运维费用</div></li>
+    <li class="lv11"><div class="moneyBox"><span class="bigNum">7</span><span class="unit">千万</span></div><div class="iconTitle">应用产品采购费用</div></li>
+</ul>
+<div class="bottomBox">
+    <div class="chartBox">
+        <div class="chartTitle">
+            37个省分别投入数
+        </div>
+        <div class="contentBox">
+
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    (function () {
+        var newRem = function () {
+            var html = document.documentElement;
+            html.style.fontSize =
+                (html.getBoundingClientRect().width > 864) ? (html.getBoundingClientRect().width / 96 + 'px') : '12px';
+        };
+        window.addEventListener('resize', newRem, false);
+        newRem();
+    })();
+
+
+</script>
+</html>
