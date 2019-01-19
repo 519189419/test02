@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.imgBox {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+ul {
+    height: 100%;
+    /*transition: all 2s;*/
+}
+li{
+    float: left;
+    height: 100%;
+    transition: all 2s;
+}
+
+li iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.left, .right {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: #ccc;
+}
+
+.right {
+    left: auto;
+    right: 0;
+}

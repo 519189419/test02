@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: url("../img/mainBg.png") no-repeat center;
+    background-size: cover;
+}
+
+.header {
+    height: 80px;
+    height: 4rem;
+    background: url("../img/topBg.png") no-repeat center;
+    background-size: cover;
+}
+
+.logo {
+    display: inline-block;
+    float: left;
+    margin-left: 55px;
+    width: 408px;
+    width: 20.4rem;
+    height: 74px;
+    height: 3.7rem;
+    text-indent: -9999em;
+    margin-left: 2.75rem;
+    background: url("../img/logo.png") no-repeat center;
+    background-size: contain;
+}
+
+.header .title {
+    height: 80px;
+    height: 4rem;
+    width: 567px;
+    width: 28.35rem;
+    margin: 0 auto;
+    background: url("../img/toptitle.png") no-repeat center;
+    background-size: contain;
+}
+
+.timeBox {
+    position: absolute;
+    right: 45px;
+    right: 2.25rem;
+    top: 0;
+    width: 150px;
+    width: 7.5rem;
+    height: 80px;
+    height: 4rem;
+    line-height: 80px;
+    line-height: 4rem;
+    color: #bdc3c7;
+    font-size: 24px;
+    font-size: 1.2rem;
+    background: url("../img/time.png") no-repeat left;
+    text-indent: 40px;
+    text-indent: 2rem;
+    background-size: 30px;
+    background-size: 1.5rem;
+}
+
+.contentBox {
+    position: absolute;
+    top: 80px;
+    top: 4rem;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10px 30px;
+    padding: 0.5rem 1.5rem;
+    padding-top: 0px;
+}
+
+.mainArea {
+    height: 66%;
+}
+
+.mainLeftArea {
+    width:31.25%;
+    height: 100%;
+    float: left;
+}
+.mainLeftTopArea{
+    height: 50%;
+}
+.mainLeftBottomArea{
+    height: 50%;
+}
+
+.mainMiddleArea {
+    width:37.5%;
+    height: 100%;
+    float: left;
+}
+
+.mainRightArea {
+    width: 31.25%;
+    height: 100%;
+    float: left;
+}
+.mainRightTopArea{
+    height: 50%;
+}
+.mainRightBottomArea{
+    height: 50%;
+}
+
+.bottomArea {
+    height: 34%;
+}
+
+.bottomLeftArea{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding-right: 15px;
+    padding-right: 0.75rem;
+}
+.bottomRightArea{
+    width: 50%;
+    height: 100%;
+    padding-left: 15px;
+    padding-left: 0.75rem;
+    float: left;
+}
+.chartBox {
+    position: relative;
+    text-align: center;
+    height: 100%;
+    padding-top:17px;
+    padding-top:0.85rem;
+    padding-bottom:10px;
+    padding-bottom:0.5rem;
+}
+
+.chartContentBox {
+    position: absolute;
+    top: 57px;
+    top: 2.85rem;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.12);
+}
+
+.chartBoxTitle {
+    color: #fff;
+    display:block;
+    height: 40px;
+    height: 2rem;
+    line-height: 34px;
+    line-height: 1.7rem;
+    text-align: left;
+    background: url("../img/titleBg.png") no-repeat left rgba(0,58,176,0.1);
+    background-size: 527px 51px;
+    background-size: 26.35rem 2.55rem;
+    font-size: 14px;
+    font-size: 0.7rem;
+    text-indent: 24px;
+    text-indent: 1.2rem;
+    background-position: -6px -5px;
+    background-position: -0.3rem -0.25rem;
+}
+

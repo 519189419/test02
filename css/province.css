@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 微软雅黑;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: url("../img/bg.jpg") no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.header {
+    height: 75px;
+    height: 3.75rem;
+    background: url("../img/header.png") no-repeat center;
+    background-size: cover;
+}
+
+.header .title {
+    line-height: 75px;
+    line-height: 3.75rem;
+    color: #83CAFE;
+    font-size: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.contentBox {
+    position: absolute;
+    top: 80px;
+    top: 4rem;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.chartBox {
+    position: relative;
+    text-align: center;
+    height: 100%;
+}
+
+.chartContentBox {
+    position: absolute;
+    border: 2px solid #168CC5;
+    border: 0.1rem solid #168CC5;
+    border-radius: 3px;
+    border-radius: 0.15rem;
+    top: 12px;
+    top: 0.6rem;
+    left: 5px;
+    left: 0.25rem;
+    right: 5px;
+    right: 0.25rem;
+    bottom: 5px;
+    bottom: 0.25rem;
+
+}
+
+.chartBoxTitle {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    background-color: #1A3F83;
+    font-size: 14px;
+    font-size: 0.7rem;
+    margin: 0 auto;
+    padding: 1px;
+    padding: 0.05rem;
+}
+
+.chartBoxTitle span {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #020A3C;
+    border: 0.05rem solid #020A3C;
+    padding: 2px;
+    padding: 0.1rem;
+}
+
+.mainArea {
+    width: 70%;
+    float: left;
+    height: 100%;
+    position: relative;
+}
+
+.mainTitle {
+    position: relative;
+    top: -20px;
+    top: -1rem;
+    left: 45px;
+    left: 2.25rem;
+    height: 70px;
+    height: 3.5rem;
+}
+
+.topTitle {
+    font-size: 15px;
+    font-size: 0.75rem;
+    color: #F2F305;
+    line-height: 35px;
+    line-height: 1.75rem;
+}
+
+.botTitle {
+    color: #fff;
+    font-size: 20px;
+    font-size: 1rem;
+    line-height: 3.35rem;
+}
+
+.moneyNum li {
+    float: left;
+    list-style: none;
+    color: #fff;
+    width: 33px;
+    width: 1.65rem;
+    text-align: center;
+    font-size: 40px;
+    font-size: 2rem;
+    height: 55px;
+    height: 2.75rem;
+    line-height: 55px;
+    line-height: 2.75rem;
+    background-color: #18ADEF;
+    margin-right: 10px;
+    margin-right: 0.5rem;
+}
+
+.mainContentBox {
+    position: absolute;
+    bottom: 0;
+    top: 80px;
+    top: 4rem;
+    left: 0;
+    right: 0;
+}
+
+.leftArea {
+    width: 30%;
+    float: left;
+    height: 100%;
+}
+
+.leftTopArea {
+    height: 33%;
+}
+
+.leftMidArea {
+    height: 33%;
+}
+
+.leftBotArea {
+    height: 33%;
+}
+
+.placeChoseIcon {
+    width: 10px;
+    width: 0.5rem;
+    height: 60px;
+    height: 3rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    overflow: hidden;
+    opacity: 0.5;
+    border-radius: 5px;
+    cursor: pointer;
+    background: url("../img/arrow_down.png") repeat-y top center #fff;
+}
+
+.placeChoseIcon:hover,.placeChoseIcon.open {
+    width: 45px;
+    opacity: 1;
+    width: 2.25rem;
+    background:url("../img/map.gif")no-repeat center ;
+}
+
+.placeChoseIcon img {
+    height: 100%;
+}
+
+.proviceList {
+    background: rgba(8, 28, 64, 0.9);
+    width: 0px;
+    height: 600px;
+    height: 30rem;
+    position: absolute;
+    right: 45px;
+    right: 2.25rem;
+    z-index: 10;
+    bottom: 50px;
+    bottom: 2.5rem;
+}
+
+.proviceList .title {
+    background: url("../img/title_ic.png") no-repeat 10px center;
+    background: url("../img/title_ic.png") no-repeat 0.5rem center;
+    text-indent: 30px;
+    text-indent: 1.5rem;
+    color: #1EAAEE;
+    font-size: 15px;
+    font-size: 0.75px;
+    height: 30px;
+    height: 1.5rem;
+    background-size: 16px 16px;
+    background-size: 0.8rem 0.8rem;
+    line-height: 30px;
+    line-height: 1.5rem;
+}
+
+.provicelist {
+    position: absolute;
+    top: 30px;
+    top: 1.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.provicelist li {
+    width: 135px;
+    width: 6.75rem;
+    list-style: none;
+    height: 30px;
+    height: 1.5rem;
+    font-size: 12px;
+    font-size: 0.6rem;
+    line-height: 30px;
+    line-height: 1.5rem;
+    float: left;
+    text-indent: 10px;
+    text-indent: 0.5rem;
+}
+
+.provicelist li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    border-radius: 0.25rem;
+}
+
+.provicelist li a:hover {
+    background: #214991;
+}

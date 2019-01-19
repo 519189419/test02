@@ -1,0 +1,701 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    background: url("../img/threeBg.jpg") no-repeat;
+    background-size: 1920px 1080px;
+    background-size: 96rem 54rem;
+    overflow: hidden;
+}
+
+.middle {
+    width: 15rem;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg);
+    position: absolute;
+    left: 50%;
+    margin-top: 22rem;
+    margin-left: -6rem;
+    text-align: center;
+    perspective-origin: 0;
+    animation: rotate 40s linear infinite;
+    transition: all 0s;
+}
+
+/* 旋转的动画 */
+@keyframes rotate {
+    0% {
+        transform: rotateX(-20deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(-20deg) rotateY(360deg);
+    }
+}
+
+@keyframes jump {
+    0% {
+        top: 0rem;
+    }
+    50% {
+        top: -2rem;
+    }
+    100% {
+        top: 0rem;
+    }
+}
+
+.middle:hover {
+    animation-play-state: paused;
+}
+
+.middle:hover li {
+    animation-play-state: paused;
+}
+
+.middle:hover li .centerBg {
+    animation-play-state: paused;
+}
+
+.middle li:hover .centerBg {
+    animation-play-state: paused;
+}
+
+.middle li {
+    width: 145px;
+    width: 7.25rem;
+    height: 150px;
+    height: 7.5rem;
+    list-style: none;
+    position: absolute;
+    cursor: pointer;
+    box-sizing: border-box;
+    left: 50%;
+    text-align: center;
+    margin-left: -72.5px;
+    margin-left: -3.625rem;
+    background: url("../img/libg.png") no-repeat center top;
+    background-size: cover;
+    /*animation-play-state: paused !important;*/
+    color: #fff;
+}
+
+.middle .lv1 {
+    transform: rotateY(0deg) translate3d(0px, -4.25rem, 19rem) rotateY(0deg) rotateX(20deg) scale(1);
+    animation: rotate1 40s linear infinite;
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: rotateY(0deg) translate3d(0px, -4.25rem, 19rem) rotateY(0deg) rotateX(20deg) scale(1);
+    }
+    50% {
+        transform: rotateY(0deg) translate3d(0px, -4.25rem, 19rem) rotateY(-180deg) rotateX(20deg) scale(0.4);
+    }
+    100% {
+        transform: rotateY(0deg) translate3d(0px, -4.25rem, 19rem) rotateY(-360deg) rotateX(20deg) scale(1);
+    }
+}
+
+.middle .lv2 {
+    transform: rotateY(45deg) translate3d(0px, -4.25rem, 19rem) rotateY(-45deg) rotateX(20deg) scale(0.85);
+    animation: rotate2 40s linear infinite;
+    background-image: url(../img/li02.png);
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotateY(45deg) translate3d(0px, -4.25rem, 19rem) rotateY(-45deg) rotateX(20deg) scale(0.85);
+    }
+    37.5% {
+        transform: rotateY(45deg) translate3d(0px, -4.25rem, 19rem) rotateY(-180deg) rotateX(20deg) scale(0.4);
+    }
+    87.5% {
+        transform: rotateY(45deg) translate3d(0px, -4.25rem, 19rem) rotateY(-360deg) rotateX(20deg) scale(1);
+    }
+    100% {
+        transform: rotateY(45deg) translate3d(0px, -4.25rem, 19rem) rotateY(-405deg) rotateX(20deg) scale(0.85);
+    }
+}
+
+.middle .lv3 {
+    transform: rotateY(90deg) translate3d(0px, -4.25rem, 19rem) rotateY(-90deg) rotateX(20deg) scale(0.7);
+    animation: rotate3 40s linear infinite;
+    background-image: url(../img/li03.png);
+}
+
+@keyframes rotate3 {
+    0% {
+        transform: rotateY(90deg) translate3d(0px, -4.25rem, 19rem) rotateY(-90deg) rotateX(20deg) scale(0.7);
+    }
+    25% {
+        transform: rotateY(90deg) translate3d(0px, -4.25rem, 19rem) rotateY(-180deg) rotateX(20deg) scale(0.4);
+    }
+    75% {
+        transform: rotateY(90deg) translate3d(0px, -4.25rem, 19rem) rotateY(-360deg) rotateX(20deg) scale(1);
+    }
+    100% {
+        transform: rotateY(90deg) translate3d(0px, -4.25rem, 19rem) rotateY(-450deg) rotateX(20deg) scale(0.7);
+    }
+}
+
+.middle .lv4 {
+    transform: rotateY(135deg) translate3d(0px, -4.25rem, 19rem) rotateY(-135deg) rotateX(20deg) scale(0.55);
+    animation: rotate4 40s linear infinite;
+    background-image: url(../img/li04.png);
+}
+
+@keyframes rotate4 {
+    0% {
+        transform: rotateY(135deg) translate3d(0px, -4.25rem, 19rem) rotateY(-135deg) rotateX(20deg) scale(0.55);
+    }
+    12.5% {
+        transform: rotateY(135deg) translate3d(0px, -4.25rem, 19rem) rotateY(-180deg) rotateX(20deg) scale(0.4);
+    }
+    62.5% {
+        transform: rotateY(135deg) translate3d(0px, -4.25rem, 19rem) rotateY(-360deg) rotateX(20deg) scale(1);
+    }
+
+    100% {
+        transform: rotateY(135deg) translate3d(0px, -4.25rem, 19rem) rotateY(-495deg) rotateX(20deg) scale(0.55);
+    }
+}
+
+.middle .lv5 {
+    transform: rotateY(180deg) translate3d(0px, -4.25rem, 19rem) rotateY(-180deg) rotateX(20deg) scale(0.4);
+    animation: rotate5 40s linear infinite;
+    background-image: url(../img/li05.png);
+}
+
+@keyframes rotate5 {
+    0% {
+        transform: rotateY(180deg) translate3d(0px, -4.25rem, 19rem) rotateY(-180deg) rotateX(20deg) scale(0.4);
+    }
+    50% {
+        transform: rotateY(180deg) translate3d(0px, -4.25rem, 19rem) rotateY(-360deg) rotateX(20deg) scale(1);
+    }
+    100% {
+        transform: rotateY(180deg) translate3d(0px, -4.25rem, 19rem) rotateY(-540deg) rotateX(20deg) scale(0.4);
+    }
+}
+
+.middle .lv6 {
+    transform: rotateY(225deg) translate3d(0px, -4.25rem, 19rem) rotateY(-225deg) rotateX(20deg) scale(0.55);
+    animation: rotate6 40s linear infinite;
+    background-image: url(../img/li06.png);
+}
+
+@keyframes rotate6 {
+    0% {
+        transform: rotateY(225deg) translate3d(0px, -4.25rem, 19rem) rotateY(-225deg) rotateX(20deg) scale(0.55);
+    }
+    37.5% {
+        transform: rotateY(225deg) translate3d(0px, -4.25rem, 19rem) rotateY(-360deg) rotateX(20deg) scale(1);
+    }
+    87.5% {
+        transform: rotateY(225deg) translate3d(0px, -4.25rem, 19rem) rotateY(-540deg) rotateX(20deg) scale(0.4);
+    }
+    100% {
+        transform: rotateY(225deg) translate3d(0px, -4.25rem, 19rem) rotateY(-585deg) rotateX(20deg) scale(0.55);
+    }
+}
+
+.middle .lv7 {
+    transform: rotateY(270deg) translate3d(0px, -4.25rem, 19rem) rotateY(-270deg) rotateX(20deg) scale(0.7);
+    animation: rotate7 40s linear infinite;
+    background-image: url(../img/li07.png);
+}
+
+@keyframes rotate7 {
+    0% {
+        transform: rotateY(270deg) translate3d(0px, -4.25rem, 19rem) rotateY(-270deg) rotateX(20deg) scale(0.7);
+    }
+    25% {
+        transform: rotateY(270deg) translate3d(0px, -4.25rem, 19rem) rotateY(-360deg) rotateX(20deg) scale(1);
+    }
+    75% {
+        transform: rotateY(270deg) translate3d(0px, -4.25rem, 19rem) rotateY(-540deg) rotateX(20deg) scale(0.4);
+    }
+    100% {
+        transform: rotateY(270deg) translate3d(0px, -4.25rem, 19rem) rotateY(-630deg) rotateX(20deg) scale(0.7);
+    }
+}
+
+.middle .lv8 {
+    transform: rotateY(315deg) translate3d(0px, -4.25rem, 19rem) rotateY(-315deg) rotateX(20deg) scale(0.85);
+    animation: rotate8 40s linear infinite;
+    background-image: url(../img/li08.png);
+}
+
+@keyframes rotate8 {
+    0% {
+        transform: rotateY(315deg) translate3d(0px, -4.25rem, 19rem) rotateY(-315deg) rotateX(20deg) scale(0.85);
+    }
+    12.5% {
+        transform: rotateY(315deg) translate3d(0px, -4.25rem, 19rem) rotateY(-360deg) rotateX(20deg) scale(1);
+    }
+    62.5% {
+        transform: rotateY(315deg) translate3d(0px, -4.25rem, 19rem) rotateY(-540deg) rotateX(20deg) scale(0.4);
+    }
+    100% {
+        transform: rotateY(315deg) translate3d(0px, -4.25rem, 19rem) rotateY(-675deg) rotateX(20deg) scale(0.85);
+    }
+}
+
+.middle .lv9 {
+    position: absolute;
+    left: 50%;
+    margin-left: -10.7rem;
+    transform: translate3d(0rem, -15.35rem, 0);
+    background: none;
+    width: 428px;
+    width: 21.4rem;
+    height: 307px;
+    height: 15.35rem;
+    transform-style: preserve-3d;
+    animation: jump 2s linear infinite;
+}
+
+.middle .centerBg {
+    width: 428px;
+    width: 21.4rem;
+    /*margin-left:-93px;*/
+    /*margin-left: -4.85rem;*/
+    height: 307px;
+    height: 15.35rem;
+    background: url("../img/centerTtBg.png") no-repeat 84px center;
+    background: url("../img/centerTtBg.png") no-repeat 4.2rem center;
+    background-size: 337px 307px;
+    background-size: 16.85rem 15.35rem;
+    animation: centerRotate 40s linear infinite;
+}
+
+@keyframes centerRotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(-360deg);
+    }
+}
+
+.leftBottomBox {
+    top: 300px;
+    top: 18rem;
+    position: absolute;
+    height: 250px;
+    height: 12.5rem;
+    left: 20px;
+    left: 1.5rem;
+    width: 470px;
+    width: 23.5rem;
+}
+
+.moneyBox {
+    width: 100%;
+    height: 143px;
+    height: 7.15rem;
+    line-height: 143px;
+    line-height: 7.15rem;
+    font-size: 20px;
+    font-size: 1rem;
+}
+
+.middle .percentageBox {
+    font-size: 35px;
+    font-size: 1.75rem;
+    height: 80px;
+    height: 4rem;
+    line-height: 120px;
+    line-height: 6rem;
+    overflow: hidden;
+    font-family: fantasy;
+}
+
+.middle li .iconTitle {
+    font-size: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.titleLine {
+    position: absolute;
+    top: 0;
+    height: 80px;
+}
+
+.titleName {
+    width: 400px;
+    width: 20rem;
+    height: 40px;
+    height: 2rem;
+    background: url("../img/title.png") no-repeat center;
+    margin-top: 35px;
+    margin-top: 1.75rem;
+    margin-left: 25px;
+    margin-left: 1.25rem;
+    display: inline-block;
+    float: left;
+    background-size: contain;
+}
+
+.moduleName {
+    background: url("../img/moduleNameBg.png") no-repeat center;
+    background-size: 100% 2.1rem;
+    height: 42px;
+    height: 2.1rem;
+    line-height: 2rem;
+    display: inline-block;
+    font-size: 32px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 35px;
+    margin-top: 1.75rem;
+    float: left;
+    margin-left: 10px;
+    margin-left: 0.5rem;
+    padding: 0 25px;
+    padding: 0 1.25rem;
+    color: #0ad1f7;
+}
+
+.leftBox {
+    position: absolute;
+    top: 80px;
+    top: 4rem;
+    left: 0;
+    width: 540px;
+    width: 27rem;
+    height: 610px;
+    height: 30.5rem;
+    padding-top: 70px;
+    padding-top: 3.5rem;
+}
+
+.alertBox {
+    /*width: 410px;*/
+    /*width: 20.5rem;*/
+    height: 130px;
+    height: 6.5rem;
+    margin-left: 30px;
+    margin-left: 1.5rem;
+    text-indent: 15px;
+    text-indent: 0.75rem;
+    background: url("../img/safe_03.png") no-repeat;
+    background-size: 100% 6.5rem;
+    color: #fff;
+    margin-top: 10px;
+    margin-top: 0.5rem;
+}
+
+.totalNum {
+    height: 70px;
+    height: 3.5rem;
+    line-height: 90px;
+    line-height: 4.5rem;
+    padding: 0 10px;
+    padding: 0 0.5rem;
+}
+
+.bigNum {
+    font-size: 60px;
+    font-size: 3rem;
+    color: #fdb400;
+    font-weight: 500;
+    font-family: fantasy;;
+}
+
+.unit {
+    padding: 0 10px;
+    padding: 0 0.5rem;
+    color: #fdb400;
+}
+
+.msgBox {
+    height: 60px;
+    height: 3rem;
+    line-height: 60px;
+    line-height: 3rem;
+}
+
+.numBox {
+    padding: 0 10px;
+    padding: 0 0.5rem;
+    font-size: 12px;
+    font-size: 0.6rem;
+}
+
+.blueNum {
+    line-height: 60px;
+    line-height: 3rem;
+    font-size: 25px;
+    font-size: 1.25rem;
+    color: #00c0ff;
+    padding: 0 5px;
+    padding: 0 0.25rem;
+}
+
+.totalBox {
+    margin-left: 55px;
+    margin-left: 2.75rem;
+    height: 100px;
+    height: 5rem;
+
+}
+
+.totalBox .title {
+    font-size: 18px;
+    font-size: 0.9rem;
+    line-height: 50px;
+    line-height: 2.5rem;
+    color: #fff;
+}
+
+.moneyNumBox {
+    width: 240px;
+    width: 12rem;
+    height: 50px;
+    height: 2.5rem;
+    background: url("../img/monyBoxBg.png") no-repeat center;
+    background-size: 100% 2.5rem;
+    text-indent: 40px;
+    text-indent: 2rem;
+    cursor: pointer;
+}
+
+.moneyNumBox:hover span {
+    color: #ffb500;
+}
+
+.moneyNumber {
+    font-size: 35px;
+    font-size: 1.75rem;
+    line-height: 50px;
+    line-height: 2.5rem;
+    display: inline;
+    color: #01d5fd;
+    font-weight: 600;
+}
+
+.moneyNumBox .munit {
+    float: right;
+    line-height: 60px;
+    line-height: 3rem;
+    padding-right: 10px;
+    padding-right: 0.75rem;
+    color: #01d5fd;
+}
+
+.rightBox {
+    position: absolute;
+    top: 80px;
+    top: 4rem;
+    right: 30px;
+    right: 1.5rem;
+    width: 420px;
+    width: 20rem;
+    height: 610px;
+    height: 30.5rem;
+    padding-top: 70px;
+    padding-top: 3.5rem;
+}
+
+.rightTopBox {
+    position: absolute;
+    top: 0;
+    height: 180px;
+    height: 9rem;
+    left: 0;
+    right: 0;
+}
+
+.rightMidBox {
+    position: absolute;
+    top: 180px;
+    top: 9rem;
+    height: 180px;
+    height: 9rem;
+    left: 0;
+    right: 0;
+}
+
+.rightBottomBox {
+    position: absolute;
+    top: 360px;
+    top: 18rem;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.chartBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.chartTitle {
+    height: 60px;
+    height: 3rem;
+    font-size: 17px;
+    font-size: 0.85rem;
+    line-height: 60px;
+    line-height: 3rem;
+    color: #fff;
+    text-indent: 30px;
+    text-indent: 1.5rem;
+    background: url("../img/chartTitleBg.png") no-repeat 10px center;
+    background: url("../img/chartTitleBg.png") no-repeat 0.5rem center;
+    background-size: 5px 20px;
+    background-size: 0.25rem 1rem;
+}
+
+.contentBox {
+    position: absolute;
+    top: 60px;
+    top: 3rem;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.bottomBox {
+    position: absolute;
+    top: 700px;
+    top: 35rem;
+    bottom: 10px;
+    bottom: 0.5rem;
+    left: 30px;
+    left: 1.5rem;
+    right: 30px;
+    right: 1.5rem;
+}
+
+.progressBar {
+    height: 65px;
+    height: 3.25rem;
+    width: 14px;
+    width: 0.7rem;
+    position: relative;
+    border: 1px solid #feb500;
+    border-radius: 22px;
+    border-radius: 1.1rem;
+    margin: 0 6px;
+    margin: 0 0.3rem;
+    margin-top: 9px;
+    margin-top: 0.45rem;
+    overflow: hidden;
+}
+
+.progressBar::after {
+    content: "";
+    border-radius: 14px;
+    border-radius: 0.7rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 1px solid #07091E;
+}
+
+.progressInside {
+    position: absolute;
+    bottom: 1px;
+    bottom: 0.05rem;
+    left: 1px;
+    left: 0.05rem;
+    height: 100%;
+    right: 1px;
+    right: 0.05rem;
+    border-radius: 14px;
+    border-radius: 0.7rem;
+    background: #feb500;
+    transition: all 1s;
+    animation: toHeight 1s linear;
+}
+
+@keyframes toHeight {
+    0% {
+        height: 0%;
+    }
+}
+
+.connectWay {
+    height: 130px;
+    height: 6.5rem;
+    width: 25%;
+    box-sizing: border-box;
+    float: left;
+    top: 20px;
+    top: 1rem;
+    position: relative;
+}
+
+.connectWay .percentage {
+    color: #f9b700;
+    font-size: 12px;
+    font-size: 0.6rem;
+    float: right;
+    font-family: fantasy;
+}
+
+.connectWay .progressBar {
+    position: absolute;
+    right: 8px;
+    right: 0.4rem;
+    top: 12px;
+    top: 0.6rem;
+}
+
+.wayName {
+    color: #fff;
+    font-size: 18px;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 40px;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.connectWay .icon {
+    width: 60px;
+    width: 3rem;
+    height: 50px;
+    height: 2.5rem;
+    position: absolute;
+    top: 40px;
+    top: 2rem;
+    left: 10px;
+    left: 0.5rem;
+    background: url("../img/safe_07.png") no-repeat center;
+    background-size:contain ;
+}
+
+.zwww .icon {
+    background-image: url(../img/safe_10.png);
+}
+
+.vpdn .icon {
+    background-image: url(../img/safe_16.png);
+}
+
+.other .icon {
+    background-image: url(../img/safe_13.png);
+}

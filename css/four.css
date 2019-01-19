@@ -1,0 +1,306 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    perspective: 6200px;
+    perspective: 200rem;
+    background: url("../img/fourBg.png") no-repeat;
+    background-size: 1920px 1080px;
+    background-size: 96rem 54rem;
+    overflow: hidden;
+}
+
+.leftBox {
+    position: absolute;
+    top: 130px;
+    top: 6.5rem;
+    left: 0;
+    width: 50% ;
+    bottom: 0;
+}
+
+.leftTopBox {
+    position: absolute;
+    height: 33.3%;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.leftMidBox{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 33.3%;
+    height: 33.3%;
+}
+
+.leftBottomBox {
+    position: absolute;
+    bottom: 0;
+    height:33.3%;
+    left: 0;
+    right: 0;
+}
+
+
+
+.titleLine {
+    position: absolute;
+    top: 0;
+    height: 80px;
+}
+
+.titleName {
+    width: 400px;
+    width: 20rem;
+    height: 40px;
+    height: 2rem;
+    background: url("../img/title.png") no-repeat center;
+    margin-top: 35px;
+    margin-top: 1.75rem;
+    margin-left: 25px;
+    margin-left: 1.25rem;
+    display: inline-block;
+    float: left;
+    background-size: contain;
+}
+
+.moduleName {
+    background: url("../img/moduleNameBg.png") no-repeat center;
+    background-size: 100% 2.1rem;
+    height: 42px;
+    height: 2.1rem;
+    line-height: 2rem;
+    display: inline-block;
+    font-size: 32px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 35px;
+    margin-top: 1.75rem;
+    margin-left: 10px;
+    margin-left: 0.5rem;
+    float: left;
+    padding: 0 25px;
+    padding: 0 1.25rem;
+    color: #0ad1f7;
+}
+
+.totalBox {
+    margin-left: 55px;
+    margin-left: 2.75rem;
+    height: 100px;
+    height: 5rem;
+
+}
+
+.totalBox .title {
+    font-size: 18px;
+    font-size: 0.9rem;
+    line-height: 50px;
+    line-height: 2.5rem;
+    color: #fff;
+}
+
+.rightBox {
+    position: absolute;
+    top: 130px;
+    top: 6.5rem;
+    right: 0;
+    width: 50% ;
+    bottom: 0;
+}
+
+.rightTopBox {
+    position: absolute;
+    height: 33.3%;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.rightMidBox{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 33.3%;
+    height: 33.3%;
+}
+
+.rightBottomBox {
+    position: absolute;
+    bottom: 0;
+    height:33.3%;
+    left: 0;
+    right: 0;
+}
+
+
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.chartBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.chartTitle {
+    height: 60px;
+    height: 3rem;
+    font-size: 17px;
+    font-size: 0.85rem;
+    line-height: 60px;
+    line-height: 3rem;
+    color: #fff;
+    text-indent: 30px;
+    text-indent: 1.5rem;
+    background: url("../img/chartTitleBg.png") no-repeat 10px center;
+    background: url("../img/chartTitleBg.png") no-repeat 0.5rem center;
+    background-size: 5px 20px;
+    background-size: 0.25rem 1rem;
+}
+
+.contentBox {
+    position: absolute;
+    top: 60px;
+    top: 3rem;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+
+
+.progressBar {
+    height: 65px;
+    height: 3.25rem;
+    width: 14px;
+    width: 0.7rem;
+    position: relative;
+    border: 1px solid #feb500;
+    border-radius: 22px;
+    border-radius: 1.1rem;
+    margin: 0 6px;
+    margin: 0 0.3rem;
+    margin-top: 9px;
+    margin-top: 0.45rem;
+    overflow: hidden;
+}
+
+.progressBar::after {
+    content: "";
+    border-radius: 14px;
+    border-radius: 0.7rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 1px solid #07091E;
+}
+
+.progressInside {
+    position: absolute;
+    bottom: 1px;
+    bottom: 0.05rem;
+    left: 1px;
+    left: 0.05rem;
+    height: 100%;
+    right: 1px;
+    right: 0.05rem;
+    border-radius: 14px;
+    border-radius: 0.7rem;
+    background: #feb500;
+    transition: all 1s;
+    animation: toHeight 1s linear;
+}
+
+@keyframes toHeight {
+    0% {
+        height: 0%;
+    }
+}
+
+.connectWay {
+    height: 130px;
+    height: 6.5rem;
+    width: 25%;
+    box-sizing: border-box;
+    float: left;
+    top: 20px;
+    top: 1rem;
+    position: relative;
+}
+
+.connectWay .percentage {
+    color: #f9b700;
+    font-size: 12px;
+    font-size: 0.6rem;
+    float: right;
+    font-family: fantasy;
+}
+
+.connectWay .progressBar {
+    position: absolute;
+    right: 8px;
+    right: 0.4rem;
+    top: 12px;
+    top: 0.6rem;
+}
+
+.wayName {
+    color: #fff;
+    font-size: 18px;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 40px;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.connectWay .icon {
+    width: 60px;
+    width: 3rem;
+    height: 50px;
+    height: 2.5rem;
+    position: absolute;
+    top: 40px;
+    top: 2rem;
+    left: 10px;
+    left: 0.5rem;
+    background: url("../img/safe_07.png") no-repeat center;
+    background-size:contain ;
+}
+
+.zwww .icon {
+    background-image: url(../img/safe_10.png);
+}
+
+.vpdn .icon {
+    background-image: url(../img/safe_16.png);
+}
+
+.other .icon {
+    background-image: url(../img/safe_13.png);
+}
